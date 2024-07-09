@@ -57,6 +57,7 @@ public class Login {
     }
     @And("Enter a comment")
     public void enter_a_comment() {
+        driver.findElement(By.xpath("//*[@id='txt_comment']")).click();
         driver.findElement(By.xpath("//*[@id='txt_comment']")).sendKeys("A comment has been addded");
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String fileLocation = "src/test/resources/screenshots/screenshot.png";
