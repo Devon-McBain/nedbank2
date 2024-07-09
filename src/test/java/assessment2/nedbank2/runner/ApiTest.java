@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/API.feature",
         glue = "stepDefinition",
-        plugin = {"pretty","json:target/reports/report2.json"},
+        plugin = {"pretty","html:src/test/resources/reports/report2.html"},
         publish = true,
         dryRun = false
         //monochrome = true,

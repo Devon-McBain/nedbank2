@@ -14,16 +14,15 @@ import static org.junit.Assert.assertEquals;
 
 public class BasicAPI {
 
-
     public Response response;
     public int responseCode;
 
-    @Given("A header")
+    @Given("The basic contents of the Request")
     public void a_header() {
         RestAssured.baseURI = ("http://universities.hipolabs.com");
     }
 
-    @When("Endpoint")
+    @When("An endpoint for the test")
     public void endpoint() {
 
         response = given()

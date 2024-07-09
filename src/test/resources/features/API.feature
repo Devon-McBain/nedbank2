@@ -19,6 +19,6 @@
 Feature: API
 
     Scenario: API Test
-      Given A header
-      When  Endpoint
+      Given The basic contents of the Request
+      When  An endpoint for the test
       Then  Return the value of “state province” where name is the University of Witwatersrand
